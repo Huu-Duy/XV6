@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     exit(1);
   }
 
-  openFlags = O_CREATE | O_WRONLY; 
+  openFlags = O_CREATE | O_WRONLY | O_TRUNC; 
   fd_dst = open(argv[2], openFlags);
   if (fd_dst < 0) {
     fprintf(2, "cp: cannot open or create %s\n", argv[2]);
