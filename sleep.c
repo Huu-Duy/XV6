@@ -10,7 +10,6 @@ int main(int argc, char *argv[]) {
 
     // Chuyen chuoi sang so nguyen
     int ticks = atoi(argv[1]);
-    printf("nothing happens for a %s second(s)\n", argv[1]);
 
     // Goi system call sleep voi tham so la so tick
     sleep(ticks);
